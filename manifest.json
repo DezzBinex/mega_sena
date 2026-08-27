@@ -1,0 +1,24 @@
+{
+    "name": "Joga na Mega-Sena",
+    "short_name": "Mega-Sena",
+    "description": "Sorteador de jogos da Mega-Sena sem números repetidos.",
+    "start_url": "/mega_sena/",
+    "scope": "/mega_sena/",
+    "display": "standalone",
+    "background_color": "#e8f5e9",
+    "theme_color": "#126b35",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

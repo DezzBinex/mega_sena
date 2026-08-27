@@ -62,3 +62,17 @@ function limparResultado() {
 
 botaoSortear.addEventListener('click', sortearJogos);
 botaoLimpar.addEventListener('click', limparResultado);
+
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker
+            .register('./service-worker.js')
+            .then(() => {
+                console.log('Aplicativo PWA ativado.');
+            })
+            .catch((erro) => {
+                console.error('Erro ao ativar o PWA:', erro);
+            });
+    });
+}
