@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #dff5e5, #f7fff8);
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 680px;
+    padding: 32px;
+    border: 1px solid #cde5d3;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(18, 107, 53, 0.15);
+}
+
+h1 {
+    margin: 0 0 28px;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #198754;
+    color: #126b35;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+#quantidade {
+    display: block;
+    width: 90px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 2px solid #b7cdbd;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#quantidade:focus {
+    outline: 3px solid rgba(25, 135, 84, 0.2);
+    border-color: #198754;
+}
+
+button {
+    margin: 4px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#botao-sortear {
+    background-color: #198754;
+}
+
+#botao-sortear:hover {
+    background-color: #146c43;
+    transform: translateY(-2px);
+}
+
+#botao-limpar {
+    background-color: #dc3545;
+}
+
+#botao-limpar:hover {
+    background-color: #b02a37;
+    transform: translateY(-2px);
+}
+
+#mensagem {
+    min-height: 22px;
+    margin: 18px 0 0;
+    color: #b42318;
+    font-weight: bold;
+}
+
+#resultado {
+    margin-top: 24px;
+    padding: 20px;
+    border: 1px solid #c9e6d1;
+    border-radius: 14px;
+    background-color: #f0fdf4;
+    text-align: left;
+}
+
+#resultado h3 {
+    margin: 0 0 18px;
+    color: #126b35;
+    text-align: center;
+}
+
+#resultado p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 14px 0;
+}
+
+#resultado strong {
+    margin-right: 6px;
+}
+
+.bola {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: #126b35;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 24px 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    #resultado {
+        padding: 14px 10px;
+    }
+}
+
